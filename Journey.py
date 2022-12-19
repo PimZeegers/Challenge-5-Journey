@@ -25,8 +25,11 @@ print("The only direction you know is that you have to go North to reach your de
 print("")                                                                                       #zorg voor een spatie tussen de teksten                                  
 print("Options: North/East/South/West")                                                         #toon op het scherm wat tussen de haakjes staat
 
+second = ("Dit is een test")
 dog = ("You come across an abandoned home, would you like to look inside?")                     #Stel de vraag d.m.v het te printen op het scherm                     
-choice = random.choice([dog, ])
+choice = random.choice([dog,second ])    
+                                                          
+
 
 put = input()
 
@@ -75,4 +78,8 @@ if choice == dog:                                                               
                 else:
                     print("Voer aub een geldig antwoord in2")
 
-print("je hebt het gemaakt tot het einde")
+if put == "North" or put == "East" or put == "South" or put == "West":
+    print (choice)
+
+if choice == second:
+    print("")
