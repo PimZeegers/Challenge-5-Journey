@@ -1,42 +1,78 @@
-percentage_chance = 0.36
 
-if some_function(percentage_chance):
-   # action here has 36% chance to execute
-   pass
-7
+print("░░░░░██╗░█████╗░██╗░░░██╗██████╗░███╗░░██╗███████╗██╗░░░██╗")
+print("░░░░░██║██╔══██╗██║░░░██║██╔══██╗████╗░██║██╔════╝╚██╗░██╔╝")
+print("░░░░░██║██║░░██║██║░░░██║██████╔╝██╔██╗██║█████╗░░░╚████╔╝░")
+print("██╗░░██║██║░░██║██║░░░██║██╔══██╗██║╚████║██╔══╝░░░░╚██╔╝░░")
+print("╚█████╔╝╚█████╔╝╚██████╔╝██║░░██║██║░╚███║███████╗░░░██║░░░")
+print("░╚════╝░░╚════╝░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝░░░╚═╝░░░")
+
+
+print("█▀▄▀█ ▄▀█ █▀▄ █▀▀   █▄▄ █▄█   ▄▀█ █▀█ █ ▄▀█ █▄░█   ▄▀█ █▄░█ █▀▄   █▀█ █ █▀▄▀█")
+print("█░▀░█ █▀█ █▄▀ ██▄   █▄█ ░█░   █▀█ █▀▄ █ █▀█ █░▀█   █▀█ █░▀█ █▄▀   █▀▀ █ █░▀░█")
+
+start = input("Press ENTER to start your story!")                                               #Gebruik een input als een "stop" en ga door wanneer er op enter wordt geklikt.
+print("")                                                                                       #zorg voor een spatie tussen de teksten
+print("You are a viking named Jormungander, looking for a place to settledown")                 #toon op het scherm wat tussen de haakjes staat
+print("You want to stop the killing and live a good life without the need of slaughter...")     #toon op het scherm wat tussen de haakjes staat
+print("")
 import random
+import time     #(!) Zorg ervoor dat het script tijd kan meten. 
+time.sleep(1)   #zorg ervoor dat het script 2 seconden wacht voordat het de code hervat 
 
-if random.random() < percentage_chance:
-    print('aaa')
+directions = ["east","west","north","south"]   #(!!) Heeft momenteel geen actieve functie in het script                                                    #Een array ( lijst ) met keuzes
+print("You start your journey in a forest. You are lost and do not know where to go.")          #toon op het scherm wat tussen de haakjes staat 
+print("The only direction you know is that you have to go North to reach your destination.")    #toon op het scherm wat tussen de haakjes staat
+print("")                                                                                       #zorg voor een spatie tussen de teksten                                  
+print("Options: North/East/South/West")                                                         #toon op het scherm wat tussen de haakjes staat
 
+dog = ("You come across an abandoned home, would you like to look inside?")                     #Stel de vraag d.m.v het te printen op het scherm                     
+choice = random.choice([dog, ])
 
-    #Backstory for the story
+put = input()
 
-    #print("Backstory")
-    #print("You are a vikingnamed Jormungander, looking for a place to settledown")
-    #print("You want to stop the killing and live a good life without the need of slaughter")
+if put == "North" or put == "East" or put == "South" or put == "West":
+    print (choice)
 
+if choice == dog:                                                                                   #zorgt voor een loop
+    userInput = input()                                                                         #Slaat de input(ingevoerde tekst ) op in de variable "userInput"
+    if userInput == "North":
+        print("north")        
+        print("Het verhaal gaat verder...")
+        print("")
+        print("You come across an abandoned home, would you like to look inside?") # Stel de vraag d.m.v het te printen op het scherm
+        print("Options: Yes or No")  
+        abcd = input("") # Beantwoord de bovenstaande vraag met een input 
 
-    import random
+        if abcd == "No":
+            print("")
+            print("You leave the house and decide to not risk going in")
+            
+        else:
+            print("voer aub een geldig antwoord in00")
+            
+            if abcd == "Yes":
+                print("")
+                print("The entire house is burned down and you see animals living in here now.")
+                print("You see 2 corpses of the people that probably lived here a long time ago.")
+                print("You find a bag that looks like a gift for someone, it reads: “for Paul”.")
+                print("")
+                print("What do you want to do?")
+                print("Choose between:  Bury the corpses and leave and Take the present and leave ")
+        
+                question = input("")
+                if question == "1. Bury the corpses and leave":
+                    print("")
+                    print("You decide that everyone deserves a burial when they die.")
+                    print("You put the present that was for Paul on their grave so that they know the present is still safe and sound")
+                    
+                else:
+                    print("Voer aub een geldig antwoord in1")
 
-    if random.random() < percentage_chance:
-        print('aaa')
+                if question == "Take the present and leave ":
+                    print("You decide that Paul is probably dead and you as an alive person deserve the present more. You rip the present open and you find 20 gold bars inside.")  
+                    print("")  
+                    
+                else:
+                    print("Voer aub een geldig antwoord in2")
 
-    #def introScene():
-    #directions = ["left","right","forward"]
-    #print("You start your journey in a forest. You are lost and do not know where to go.")
-    #print("The only direction you know is that you have to go North to reach your destination.")
-    #userInput = ""
-    #while userInput not in directions:
-    #print("Options: North/East/South/West")
-    #userInput = input()
-    #if userInput == "North":
-    #showShadowFigure()
-    #elif userInput == "East":
-    #showSkeletons()
-    #elif userInput == "South":
-    #hauntedRoom()
-    #elif userInput == "West":
-    #print("You find that this door opens into a wall.")
-    #else: 
-    #print("Please enter a valid option.")
+print("je hebt het gemaakt tot het einde")
