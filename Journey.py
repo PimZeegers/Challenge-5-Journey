@@ -62,6 +62,7 @@ if choice == dog:
                 print("You decide that everyone deserves a burial when they die.")
                 print("You put the present on the grave where all the corpses are burried")
                 print("You do this because it gives you a good feeling to know that the present is on the grave.")
+
             if question == "B" or "b":
                 print("You think that Paul has probably already died just like the rest of them..")
                 print("You think that you, as an alive person deserve the present.")
@@ -79,11 +80,56 @@ if choice == second:
     print("B. Give her some food ")
     print("C. Leave her ")
     decision=input("")
+    
     if decision == "A" or "a":
         print("You decide that you don't need to leave these savage beasts alive,")
         print("you should put them out of their misery.")
-    if decision == "B" or "a":
+
+    if decision == "B" or "b":
         print("Every beast deserves to have a chance at survival,")
         print ("you decide to give the wolfs something to eat because you feel bad for them.") 
         print ("The mother is defensive and bites you, but you continue despite the pain and still decide to give them the food.")
+
+    if decision == "C" or "c": 
+        lijst = [] # Maak een lijst, voor de gevechts-status in op te slaan.
         print("when you turn your back to them the mother jumps at your back and attacks you.")
+        time.sleep(15) # Wacht 15 seconden
+        print("Make yourself ready..")
+        time.sleep(5) # Wacht 1 seconde
+        print("Short explanation: When certain letters appear on the screen you will have to press them quickly, otherwise you will lose the battle and die.") # Uitleg voor de mini-game.
+        time.sleep(3) # Wacht 3 seconde 
+        eerste = input("Q") # Vraag naar de eerste letter
+        if eerste == ("q"): # controleer de ingevoerde letter
+            lijst.append("50") # Als de ingevoerde letter klopt, voeg "50" toe aan de lijst.
+            print("You damaged the wolf with 50HP")  # Damage de wolf
+        else: # Als de letter niet klopt, dan gaat de else statement actief en dan pak je zelf damage.
+            print("You have taken damage yourself")
+        time.sleep(0.5)
+        Tweede = input("W")                             #(!) Spel werkt, de inputs moeten alleen nog door "geforceerd" worden, want de bedoeling is dat je in die 0,5 seconde een antwoord geeft, nu heb je oneindig de tijd.
+        if Tweede == ("w"):                             #(!) Antwoorden moeten nog geoptimaliseerd worden. Nu worden enkel kleine letters doorgevoerd
+            lijst.append("50")
+            print("You damaged the wolf with 50HP")
+        else:
+            print("You have taken damage yourself")
+        time.sleep(0.5)
+        derde = input("E")
+        if derde == ("e"):
+            lijst.append("50")
+            print("You damaged the wolf with 50HP")
+        else:
+            print("You have taken damage yourself")
+        time.sleep(0.5)
+        vierde = input("R")
+        if vierde == ("r"):         
+            lijst.append("50")
+            print("You damaged the wolf with 50HP")
+        else:
+            print("You have taken damage yourself")
+        time.sleep(0.5)
+    if lijst == [50,50,50,50] or [50,50] or [50,50,50]: #Uitleg: Voor te winnen moet je minimaal 2x een goed antwoord geven
+        print("Je hebt gewonnen!")                      #Bij een goed antwoord wordt er in de variable "lijst" een 50 toegevoegd.
+    else:                                               #Dit betekend dat bij 2x 50 of meer je gewonnen hebt, en anders velies je want,
+        print("Je hebt verloren!")                      #Dan ga je automatisch naar de "else" statement.
+
+
+
