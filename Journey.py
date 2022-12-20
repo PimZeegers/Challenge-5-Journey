@@ -63,20 +63,27 @@ if choice == dog:
                 print("You put the present on the grave where all the corpses are burried")
                 print("You do this because it gives you a good feeling to know that the present is on the grave.")
             if question == "B":
-                print("You think that Paul has probably already died just like the rest of them.. You think that you, as an alive person deserve the present. You rip the present open and you find 20 gold bars inside.")  
-                print("You look shocked, These gold bars are worth some real money!.. The people that used to live here must have been very rich..")
+                print("You think that Paul has probably already died just like the rest of them..")
+                print("You think that you, as an alive person deserve the present.")
+                print("You rip the present open and you find 20 gold bars inside.")  
+                print("You look shocked, These gold bars are worth some real money!..")
+                print("The people that used to live here must have been very rich..")
                 print("") 
 
 if choice == second:
-    print("You are walking in the direction you chose.. but then suddenly you come across a wolf protecting her wolf cub... What would you like to do?")
+    print("You are walking in the direction you chose..")
+    print("but then suddenly you come across a wolf protecting her wolf cub...")
+    print("What would you like to do?")
     print("Choose between:")
     print("A. Kill her ")
     print("B. Give her some food ")
     print("C. Leave her ")
     decision=input("")
-    if decision == "A":
-        print("You decide that you don't need to leave these savage beasts alive, you should put them out of their misery.  ")
+    if decision == "A" or "a":
+        print("You decide that you don't need to leave these savage beasts alive,")
+        print("you should put them out of their misery.")
     if decision == "B":
-        print("Every beast deserves to have a chance at survival, you decide to give the wolfs something to eat because you feel bad for them. The mother is defensive and bites you, but you continue despite the pain and still decide to give them the food. They start licking you and letting you pet them. They are very happy. ")
-    if decision == "C":
-        print("when you turn your back to them the mother jumps at your back and attacks you. You lose 10 health and have to prepare for battle.  ")
+        print("Every beast deserves to have a chance at survival,")
+        print ("you decide to give the wolfs something to eat because you feel bad for them.") 
+        print ("The mother is defensive and bites you, but you continue despite the pain and still decide to give them the food.")
+        print("when you turn your back to them the mother jumps at your back and attacks you. ")
