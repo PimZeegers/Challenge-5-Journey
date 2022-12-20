@@ -19,67 +19,64 @@ import random
 import time     #(!) Zorg ervoor dat het script tijd kan meten. 
 time.sleep(1)   #zorg ervoor dat het script 2 seconden wacht voordat het de code hervat 
 
-directions = ["east","west","north","south"]   #(!!) Heeft momenteel geen actieve functie in het script                                                    #Een array ( lijst ) met keuzes
+   #(!!) Heeft momenteel geen actieve functie in het script                                                    #Een array ( lijst ) met keuzes
 print("You start your journey in a forest. You are lost and do not know where to go.")          #toon op het scherm wat tussen de haakjes staat 
 print("The only direction you know is that you have to go North to reach your destination.")    #toon op het scherm wat tussen de haakjes staat
 print("")                                                                                       #zorg voor een spatie tussen de teksten                                  
 print("Options: North/East/South/West")                                                         #toon op het scherm wat tussen de haakjes staat
 
-second = ("Dit is een test")
-dog = ("You come across an abandoned home, would you like to look inside?")                     #Stel de vraag d.m.v het te printen op het scherm                     
+second = ("")
+dog = ("Het verhaal gaat verder....")                                       
 choice = random.choice([dog,second ])    
                                                           
 
 
 put = input()
-
-if put == "North" or put == "East" or put == "South" or put == "West":
-    print (choice)
-
-if choice == dog:                                                                                   #zorgt voor een loop
-    userInput = input()                                                                         #Slaat de input(ingevoerde tekst ) op in de variable "userInput"
-    if userInput == "North":
-        print("north")        
-        print("Het verhaal gaat verder...")
+if put == "North" or put == "East" or put == "South" or put == "West":              #put als variable en in het geval dat het gelijk staat aan North,East,South of West
+    print (choice)                                                                     #Als het bovenstaande positief is, dan print hij de ( random ) gekozen keuze
+if choice == dog:                                                                                        
         print("")
         print("You come across an abandoned home, would you like to look inside?") # Stel de vraag d.m.v het te printen op het scherm
-        print("Options: Yes or No")  
+        print("Options: Yes or No") 
+
         abcd = input("") # Beantwoord de bovenstaande vraag met een input 
 
         if abcd == "No":
             print("")
             print("You leave the house and decide to not risk going in")
             
-        else:
-            print("voer aub een geldig antwoord in00")
-            
-            if abcd == "Yes":
-                print("")
-                print("The entire house is burned down and you see animals living in here now.")
-                print("You see 2 corpses of the people that probably lived here a long time ago.")
-                print("You find a bag that looks like a gift for someone, it reads: “for Paul”.")
-                print("")
-                print("What do you want to do?")
-                print("Choose between:  Bury the corpses and leave and Take the present and leave ")
+        if abcd == "Yes":
+            print("")
+            print("The entire house is burned down and you see animals living in here now.")
+            print("You see 2 corpses of the people that probably lived here a long time ago.")
+            print("You find a bag that looks like a gift for someone, it reads: “for Paul”.")
+            print("")
+            print("What do you want to do?")
+            print("Choose between:")
+            print("A. Bury the corpses and leave")
+            print("B. Take the present and leave")
         
-                question = input("")
-                if question == "1. Bury the corpses and leave":
-                    print("")
-                    print("You decide that everyone deserves a burial when they die.")
-                    print("You put the present that was for Paul on their grave so that they know the present is still safe and sound")
-                    
-                else:
-                    print("Voer aub een geldig antwoord in1")
-
-                if question == "Take the present and leave ":
-                    print("You decide that Paul is probably dead and you as an alive person deserve the present more. You rip the present open and you find 20 gold bars inside.")  
-                    print("")  
-                    
-                else:
-                    print("Voer aub een geldig antwoord in2")
-
-if put == "North" or put == "East" or put == "South" or put == "West":
-    print (choice)
+            question = input("")
+            if question == "A":
+                print("")
+                print("You decide that everyone deserves a burial when they die.")
+                print("You put the present on the grave where all the corpses are burried")
+                print("You do this because it gives you a good feeling to know that the present is on the grave.")
+            if question == "B":
+                print("You think that Paul has probably already died just like the rest of them.. You think that you, as an alive person deserve the present. You rip the present open and you find 20 gold bars inside.")  
+                print("You look shocked, These gold bars are worth some real money!.. The people that used to live here must have been very rich..")
+                print("") 
 
 if choice == second:
-    print("")
+    print("You are walking in the direction you chose.. but then suddenly you come across a wolf protecting her wolf cub... What would you like to do?")
+    print("Choose between:")
+    print("A. Kill her ")
+    print("B. Give her some food ")
+    print("C. Leave her ")
+    decision=input("")
+    if decision == "A":
+        print("You decide that you don't need to leave these savage beasts alive, you should put them out of their misery.  ")
+    if decision == "B":
+        print("Every beast deserves to have a chance at survival, you decide to give the wolfs something to eat because you feel bad for them. The mother is defensive and bites you, but you continue despite the pain and still decide to give them the food. They start licking you and letting you pet them. They are very happy. ")
+    if decision == "C":
+        print("when you turn your back to them the mother jumps at your back and attacks you. You lose 10 health and have to prepare for battle.  ")
