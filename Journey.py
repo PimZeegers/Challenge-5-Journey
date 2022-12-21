@@ -39,12 +39,15 @@ if choice == dog:
         print("Options: Yes or No") 
 
         abcd = input("") # Beantwoord de bovenstaande vraag met een input 
+        abcd = abcd.lower()
+        abcd = abcd[0:1]
+        print(abcd)
 
-        if abcd == "No" or abcd =="no" or abcd =="n" or abcd =="N" or abcd =="No":
+        if abcd == "n":
             print("")
             print("You leave the house and decide to not risk going in")
             
-        elif abcd == "Yes" or abcd =="yes" or abcd =="y" or abcd =="ye" or abcd =="Y" or abcd =="Ye":
+        elif abcd == "y":
             print("")
             print("The entire house is burned down and you see animals living in here now.")
             print("You see 2 corpses of the people that probably lived here a long time ago.")
