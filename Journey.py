@@ -26,16 +26,15 @@ print("")                                                                       
 print("Options: North/East/South/West")                                                         #toon op het scherm wat tussen de haakjes staat
 
 second = ("")
-dog = ("Het verhaal gaat verder....")                                       
+dog =   print("")                                 
 choice = random.choice([dog,second ])    
                                                           
 
 
 put = input()
-if put == "North" or put == "East" or put == "South" or put == "West":              #put als variable en in het geval dat het gelijk staat aan North,East,South of West
+if put == "North" or put == "East" or put == "South" or put == "West":              #put als variable en in het geval dat het gelijk staat aan North,East,South of West    
     print (choice)                                                                     #Als het bovenstaande positief is, dan print hij de ( random ) gekozen keuze
 if choice == dog:                                                                                        
-        print("")
         print("You come across an abandoned home, would you like to look inside?") # Stel de vraag d.m.v het te printen op het scherm
         print("Options: Yes or No") 
 
@@ -45,7 +44,7 @@ if choice == dog:
             print("")
             print("You leave the house and decide to not risk going in")
             
-        if abcd == "Yes" or "yes" or "y" or "ye" or "Y" or "Ye":
+        elif abcd == "Yes" or "yes" or "y" or "ye" or "Y" or "Ye":
             print("")
             print("The entire house is burned down and you see animals living in here now.")
             print("You see 2 corpses of the people that probably lived here a long time ago.")
@@ -130,6 +129,3 @@ if choice == second:
         print("Je hebt gewonnen!")                      #Bij een goed antwoord wordt er in de variable "lijst" een 50 toegevoegd.
     else:                                               #Dit betekend dat bij 2x 50 of meer je gewonnen hebt, en anders velies je want,
         print("Je hebt verloren!")                      #Dan ga je automatisch naar de "else" statement.
-
-
-
