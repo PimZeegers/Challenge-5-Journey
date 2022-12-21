@@ -54,7 +54,7 @@ if start == start:   #Als het random getal in het begin uit komt op second, dan 
             print("You have taken damage yourself")
         time.sleep(0.5)
         print(lijst)
-    if lijst == [50,50,50,50]:#Minimaal 2x het goede cijfer invullen, of anders ben je dood.
+    if lijst == [50,50,50,50] or [50,50] or [50,50,50] :#Minimaal 2x het goede cijfer invullen, of anders ben je dood.
         print("Je hebt gewonnen!")
     else:
         print("Je hebt verloren!")
