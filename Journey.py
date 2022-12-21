@@ -40,11 +40,11 @@ if choice == dog:
 
         abcd = input("") # Beantwoord de bovenstaande vraag met een input 
 
-        if abcd == "No" or "no" or "n" or "N" or "No":
+        if abcd == "No" or abcd =="no" or abcd =="n" or abcd =="N" or abcd =="No":
             print("")
             print("You leave the house and decide to not risk going in")
             
-        elif abcd == "Yes" or "yes" or "y" or "ye" or "Y" or "Ye":
+        elif abcd == "Yes" or abcd =="yes" or abcd =="y" or abcd =="ye" or abcd =="Y" or abcd =="Ye":
             print("")
             print("The entire house is burned down and you see animals living in here now.")
             print("You see 2 corpses of the people that probably lived here a long time ago.")
@@ -56,13 +56,13 @@ if choice == dog:
             print("B. Take the present and leave")
         
             question = input("")
-            if question == "A" or "a":
+            if question == "A" or abcd =="a":
                 print("")
                 print("You decide that everyone deserves a burial when they die.")
                 print("You put the present on the grave where all the corpses are burried")
                 print("You do this because it gives you a good feeling to know that the present is on the grave.")
 
-            if question == "B" or "b":
+            if question == "B" or abcd =="b":
                 print("You think that Paul has probably already died just like the rest of them..")
                 print("You think that you, as an alive person deserve the present.")
                 print("You rip the present open and you find 20 gold bars inside.")  
@@ -80,16 +80,16 @@ if choice == second:
     print("C. Leave her ")
     decision=input("")
     
-    if decision == "A" or "a":
+    if decision == "A" or decision =="a":
         print("You decide that you don't need to leave these savage beasts alive,")
         print("you should put them out of their misery.")
 
-    if decision == "B" or "b":
+    if decision == "B" or decision =="b":
         print("Every beast deserves to have a chance at survival,")
         print ("you decide to give the wolfs something to eat because you feel bad for them.") 
         print ("The mother is defensive and bites you, but you continue despite the pain and still decide to give them the food.")
 
-    if decision == "C" or "c": 
+    if decision == "C" or decision =="c": 
         lijst = [] # Maak een lijst, voor de gevechts-status in op te slaan.
         print("when you turn your back to them the mother jumps at your back and attacks you.")
         time.sleep(15) # Wacht 15 seconden
